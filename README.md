@@ -23,3 +23,7 @@ An app that lets users generate packing lists and document their camping experie
 **Stretch Goals:**
 * Trip Wizard - Walks you through a series of questions and makes suggestions on what to pack based on what you enter.
 * Group/Solo Trips - Allows users to create a group trip, and assign items as 'shared' or 'personal'.
+
+## Initial Planning:
+![alt text](media/whiteboarding1.JPG "whiteboarding1")
+![alt text](media/whiteboarding2.JPG "whiteboarding2")
