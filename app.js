@@ -10,17 +10,10 @@ app.set('view engine', 'mustache');
 app.set('views', './views');
 
 
+app.get('/', function (req, res) {
+  models.inventory.findAll().then(function(inventories){
+    res.render('index', {'inventory':inventories})
+  })
+})
 
-// Fetch:
-// models.inventory.findOne({
-//   where: {
-//     category: 'Essentials'
-//   }
-// }).then(function(inventory){
-//   console.log(inventory)
-// })
-
-app.get('/', (req, res) => res.send('Hello World!'))
-
-
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(3000, () => console.log('Listening on port 3000!'))
