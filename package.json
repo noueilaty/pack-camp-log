@@ -1,0 +1,26 @@
+{
+  "name": "pack-camp-log",
+  "version": "1.0.0",
+  "description": "An app that lets users generate packing lists and document their camping experiences.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noueilaty/pack-camp-log.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noueilaty/pack-camp-log/issues"
+  },
+  "homepage": "https://github.com/noueilaty/pack-camp-log#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "method-override": "^2.3.10",
+    "mustache-express": "^1.2.5",
+    "sequelize": "^4.31.2"
+  }
+}
