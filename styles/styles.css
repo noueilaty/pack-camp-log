@@ -1,10 +1,10 @@
-.inventory-form {
+body {
   height: 70vh;
   background-image: linear-gradient(
     to right bottom,
     rgba(#000000, 0.85),
     rgba(#004e1a, 0.85)),
-    url(media/forest-background.jpg);
+    url('forest-background.jpg');
   background-size: cover;
   background-position: top;
   text-align: center;

@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 const models = require('./models');
 const bodyParser = require('body-parser');
-
-var mustacheExpress = require('mustache-express');
+const mustacheExpress = require('mustache-express');
 
 app.use(bodyParser.urlencoded({extended:false}));
+app.use(express.static('styles'));
 
 app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
