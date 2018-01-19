@@ -5,12 +5,24 @@
     <title></title>
   </head>
   <body>
+    <h2>Equipment Inventory</h2>
 
-    <form action="/create" method="post">
-      <input type='text' name='item' placeholder='Item'/>
-      <input type='text' name='cetegory' placeholder='Cetegory'/>
-    <button>Submit</button>
-    </form>
 
+        <form action="/create" method="post">
+          <input type='text' name='item' placeholder='Item'/>
+          <input type='text' name='category' placeholder='Category'/>
+        <button>Submit</button>
+        </form>
+    <ul>
+      {{#inventory}}
+        <li>
+          <input type='checkbox' class='checkbox'>
+          {{item}}
+        </li>
+      {{/inventory}}
+    </ul>
+
+<button>Delete</button>
+<button>Load-Out</button>
   </body>
 </html>
