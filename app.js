@@ -11,9 +11,11 @@ app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
 app.set('views', './views');
 
-app.get('/', function (req, res) {
+
+
+app.get('/create', function (req, res) {
   models.inventory.findAll().then(function(inventories){
-    res.render('index', {'inventory':inventories})
+    res.render('create', {'inventory':inventories})
   })
 });
 
@@ -26,7 +28,7 @@ app.post('/create', function (req,res) {
     item:req.body.item,
     category:req.body.category
   }).then(function() {
-    res.redirect('/')
+    res.redirect('/create')
   })
 });
 
