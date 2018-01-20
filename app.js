@@ -2,12 +2,11 @@ const express = require('express');
 const app = express();
 const models = require('./models');
 const bodyParser = require('body-parser');
-const mustacheExpress = require('mustache-express');
 
-let createCheckbox = document.getElementById('checkbox')
+var mustacheExpress = require('mustache-express');
+
 
 app.use(bodyParser.urlencoded({extended:false}));
-app.use(express.static('styles'));
 
 app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
@@ -34,8 +33,11 @@ app.post('/create', function (req,res) {
   })
 });
 
+
+
 app.listen(3000, () => console.log('Listening on port 3000!'))
 
-createCheckbox.addEventListener('click', function(){
-  console.log('checked')
-})
+app.use(express.static('public'))
+ // createCheckbox.addEventListener('click', function(){
+ //   console.log('checked')
+ // })
