@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 
 var mustacheExpress = require('mustache-express');
 
+let createCheckbox = document.getElementById('checkbox')
+
 app.use(bodyParser.urlencoded({extended:false}));
 
 app.engine('mustache', mustacheExpress());
@@ -33,3 +35,7 @@ app.post('/create', function (req,res) {
 });
 
 app.listen(3000, () => console.log('Listening on port 3000!'))
+
+createCheckbox.addEventListener('click', function(){
+  console.log('checked')
+})
