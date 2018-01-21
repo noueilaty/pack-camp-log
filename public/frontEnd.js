@@ -1,7 +1,21 @@
+let checkedItems = []
+
 $('.checkbox').change(function(){
   if (this.checked) {
-    console.log('checked')
+    checkedItems.push($(this).parent())
   } else {
-    console.log('unchecked')
+    checkedItems.pop($(this).parent())
   }
+})
+
+$('#delete').click(function(){
+  for (i=0; i<checkedItems.length; i++) {
+    $(checkedItems[i]).remove()
+  }
+  checkedItems = []
+  console.log(checkedItems)
+})
+
+$('#loadOut').click(function(){
+  console.log('load-out')
 })

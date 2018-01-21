@@ -17,16 +17,18 @@
       </div>
     <ul>
       {{#inventory}}
-      <div>
+
         <li>
+          <div id='{{item}}'>
           <input type='checkbox' class='checkbox'>
           {{item}}
+          </div>
         </li>
-      </div>
+
       {{/inventory}}
     </ul>
-    <button>Delete</button>
-    <button>Load-Out</button>
+    <button id='delete'>Delete</button>
+    <button id='loadOut'>Load-Out</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="frontEnd.js" type="text/javascript"></script>
   </body>
