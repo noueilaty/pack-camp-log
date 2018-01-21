@@ -33,11 +33,6 @@ app.post('/create', function (req,res) {
   })
 });
 
-
+app.use(express.static('public'))
 
 app.listen(3000, () => console.log('Listening on port 3000!'))
-
-app.use(express.static('public'))
- // createCheckbox.addEventListener('click', function(){
- //   console.log('checked')
- // })

@@ -1,3 +1,7 @@
-document.getElementsByClassName('checkbox').addEventListener(
-  'checked', console.log('test')
-)
+$('.checkbox').change(function(){
+  if (this.checked) {
+    console.log('checked')
+  } else {
+    console.log('unchecked')
+  }
+})
