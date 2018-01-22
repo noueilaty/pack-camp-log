@@ -11,9 +11,9 @@ $('.checkbox').change(function(){
 $('#delete').click(function(){
   for (i=0; i<checkedItems.length; i++) {
     $(checkedItems[i]).remove()
+
   }
-  checkedItems = []
-  console.log(checkedItems)
+    checkedItems = []
 })
 
 $('#loadOut').click(function(){
