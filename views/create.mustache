@@ -2,39 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Pack-Camp-Log</title>
+    <title>Pack-Camp-Log | Gear Inventory Management</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-
-  </head>
-  <body>
-    <h2>Equipment Inventory</h2>
-      <div id=inventory-form>
-        <form action="/create" method="post">
-          <input type='text' name='item' placeholder='Item'/>
-          <input type='text' name='category' placeholder='Category'/>
-        <button>Submit</button>
-        </form>
-      </div>
-    <ul>
-      {{#inventory}}
-
-        <li>
-          <div id='{{item}}'>
-          {{item}}
-          <form method='POST' action='/{{id}}?_method=DELETE'>
-            <button id='delete' type='submit'>Delete</button>
-          </form>
-          </div>
-        </li>
-
-      {{/inventory}}
-    </ul>
-
-
-
-    <button id='loadOut'>Load-Out</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="frontEnd.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header class=header>
+      <h1 class="heading-primary">
+        <span class="heading-primary--main">Pack-Camp-Log</span>
+        <span class="heading-primary--sub">Gear inventory management made easy</span>
+      </h1>
+        <div id=inventory-form>
+          <form action="/create" method="post">
+            <input type='text' name='item' placeholder='Item'/>
+            <input type='text' name='category' placeholder='Category'/>
+          <button>Submit</button>
+          </form>
+        </div>
+      <ul class=gear-list>
+        {{#inventory}}
+          <li>
+            <div id='{{item}}'>
+            {{item}}
+            <form method='POST'         action='/{{id}}?_method=DELETE'>
+              <button id='delete' type='submit'>Delete</button>
+            </form>
+            </div>
+          </li>
+        {{/inventory}}
+      </ul>
+      <a href="#" class="btn btn--white btn--animated">Loadout</a>
+    </header>
   </body>
-
 </html>
