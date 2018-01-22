@@ -21,9 +21,6 @@ html, body {
     font-size: 4rem;
     font-weight: 400;
     letter-spacing: 1.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out
   };
 
   .heading-primary--sub {
