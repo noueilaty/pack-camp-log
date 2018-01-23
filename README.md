@@ -1,6 +1,7 @@
-# pack-camp-log
+# Pack-Camp-Log
 An app that lets users generate packing lists and document their camping experiences.
 
+![Pack-Camp-Log-Mockup](pack-camp-log-mockup.jpg)
 
 ## Project Requirements:
 **Instructor Set Requirements:**
@@ -13,7 +14,6 @@ An app that lets users generate packing lists and document their camping experie
 * Include a detailed README.md file.
 * Develop with mobile-first in mind.
 
-
 **Primary Goals:**
 * Allow users to register for an account and create a profile.
 * Allow registered users to manage their inventory of equipment.
@@ -25,5 +25,5 @@ An app that lets users generate packing lists and document their camping experie
 * Group/Solo Trips - Allows users to create a group trip, and assign items as 'shared' or 'personal'.
 
 ## Initial Planning:
-![alt text](media/whiteboarding1.JPG "whiteboarding1")
-![alt text](media/whiteboarding2.JPG "whiteboarding2")
+![Whiteboarding1](media/whiteboarding1.JPG "whiteboarding1")
+![Whiteboarding1](media/whiteboarding2.JPG "whiteboarding2")
